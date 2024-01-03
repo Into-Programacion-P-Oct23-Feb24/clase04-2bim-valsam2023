@@ -15,39 +15,41 @@ public class Ejemplo08 {
         // 
         String mensajeSuma;
         String mensajeSumaDos;
-        mensajeSuma = obtenerTablaSumar(10, 9); // se invoca al método 
-                                                       // obtenerTablaSumar
-                                                       // y el valor que 
-                                                       // devuelve se lo 
-                                                       // almacena  en mensajeSuma
-        
-        mensajeSumaDos = obtenerTablaMultiplicar(10, 9);
-        
-        System.out.printf("%s\n", mensajeSuma);
-        System.out.printf("%s\n", mensajeSumaDos);
+        for (int i = 1; i <= 10; i++) {
+            mensajeSuma = obtenerTablaSumar(10, 9); // se invoca al método 
+            // obtenerTablaSumar
+            // y el valor que 
+            // devuelve se lo 
+            // almacena  en mensajeSuma
+
+            mensajeSumaDos = obtenerTablaMultiplicar(10, 9);
+
+            System.out.printf("%s\n", mensajeSuma);
+            System.out.printf("%s\n", mensajeSumaDos);
+        }
     }
-        
-    public static String obtenerTablaSumar(int limite, int tabla){
+
+    public static String obtenerTablaSumar(int limite, int tabla) {
         int operacion;
         String cadena = "";
         for (int i = 1; i <= limite; i++) {
             operacion = tabla + i;
-            cadena = String.format("%s%d + %d = %d\n", cadena, tabla, i, 
+            cadena = String.format("%s%d + %d = %d\n", cadena, tabla, i,
                     operacion);
         }
-        return cadena;        
+        return cadena;
     }
-    
-    public static String obtenerTablaMultiplicar(int limite, int tabla){
+
+    public static String obtenerTablaMultiplicar(int limite, int tabla) {
         int operacion;
         String cadena = "";
         for (int i = 1; i <= limite; i++) {
             operacion = tabla * i;
-            cadena = String.format("%s%d * %d = %d\n", cadena, tabla, i, 
+            cadena = String.format("%s%d * %d = %d\n", cadena, tabla, i,
                     operacion);
         }
         return cadena;
-        
+
     }
-    
+
 }
