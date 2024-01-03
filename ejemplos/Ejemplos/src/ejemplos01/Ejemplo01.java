@@ -45,7 +45,11 @@ public class Ejemplo01 {
                     respuesta);
         }
     }
-
+/*
+    Lo que hice aqui es en obtenerMultiplicacion realice la tabla del 7 hasta el
+    100 usando procedimiento, sin retornar una variable, en cambio en el 
+    obtenerMultiplicacionDos utilice una funcion que retorne una variable.
+    */
     public static String obtenerNombre() {
         return "Luis";
     }
